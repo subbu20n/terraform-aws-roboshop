@@ -15,7 +15,7 @@ locals {
 
     health_check_path = "${var.component}" == "frontend" ? "/" : "/health"  
 
-    rule_header_url = "${var.component}" == "frontend" ? "${var.environment}.${var.var.zone_name}" : "${var.component}.backend-${var.environment}.${var.zone_name}"
+    rule_header_url = "${var.component}" == "frontend" ? "${var.environment}.${var.zone_name}" : "${var.component}.backend-${var.environment}.${var.zone_name}"
     common_tags = {
         Project = var.project 
         Environment = var.environment 
