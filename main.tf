@@ -196,4 +196,4 @@ resource "aws_lb_listener_rule" "main" {
       values = [local.rule_header_url]
     }
   }
-}
+} 

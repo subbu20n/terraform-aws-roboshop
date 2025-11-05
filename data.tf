@@ -7,7 +7,7 @@ data "aws_ssm_parameter" "private_subnet_ids" {
 }
 
 data "aws_ssm_parameter" "sg_id" {
-  name = "/${var.project}/${var.environment}/${var.component}_sg_id"
+  name = "/${var.project}/${var.environment}/${var.component}_sg_id" 
 }
 
 data "aws_ssm_parameter" "backend_alb_listener_arn" {
@@ -23,7 +23,7 @@ data "aws_ami" "joindevops" {
   most_recent      = true
 
   filter {
-    name   = "name"
+    name   = "name" 
     values = ["RHEL-9-DevOps-Practice"]
   }
 

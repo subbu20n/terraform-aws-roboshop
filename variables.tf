@@ -20,4 +20,4 @@ variable "component" {
 
 variable "rule_priority" {
 
-}
+} 
