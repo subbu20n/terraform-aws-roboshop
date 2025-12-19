@@ -23,7 +23,7 @@ data "aws_ami" "joindevops" {
   most_recent      = true
 
   filter {
-    name   = "name" 
+    name   = "name"  
     values = ["RHEL-9-DevOps-Practice"]
   }
 
